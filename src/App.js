@@ -1,6 +1,6 @@
 import "./App.css";
 
-import { BrowserRouter, Switch, Route, useLocation } from "react-router-dom";
+import { HashRouter, Switch, Route, useLocation } from "react-router-dom";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
@@ -36,9 +36,9 @@ function Pages() {
 
 function App() {
   return (
-    <BrowserRouter basename="/">
+    <HashRouter basename="/">
       <Pages />
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

@@ -5,9 +5,9 @@ export default function Header(props) {
 
   const links = {
     Home: "/",
+    About: "/about",
     Pricing: "/pricing",
     FAQ: "/FAQ",
-    About: "/about",
   };
 
   function getLinksFromEntries(entry) {
@@ -16,7 +16,7 @@ export default function Header(props) {
     let active = path === currentPath ? " active" : "";
 
     return (
-      <Nav.Link className={"nav-link" + active} href={path}>
+      <Nav.Link className={"nav-link" + active} href={"/#" + path}>
         {name}
       </Nav.Link>
     );

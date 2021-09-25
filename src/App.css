@@ -1,5 +1,23 @@
-.carousel {
-  min-width: 400px;
-  padding: 10px;
+.btn-primary,
+.btn-primary:hover,
+.btn-primary:active,
+.btn-primary:visited {
+  color: #ffffff !important;
+}
+
+.card {
+  border-radius: 2%;
+  box-shadow: 5px 5px 5px rgb(209, 209, 209);
+  margin: 1rem auto;
+}
+
+.nav-link {
+  font-size: large;
   margin: 20px;
+}
+
+.jumbotron-text {
+  background-color: #ffffff;
+  border-radius: 2%;
+  box-shadow: 5px 5px 5px rgb(209, 209, 209);
 }
