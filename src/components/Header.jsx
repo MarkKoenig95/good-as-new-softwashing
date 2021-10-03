@@ -6,8 +6,8 @@ export default function Header(props) {
   const links = {
     Home: "/",
     About: "/about",
-    Pricing: "/pricing",
-    FAQ: "/FAQ",
+    Services: "/services",
+    Contact: "/contact",
   };
 
   function getLinksFromEntries(entry) {

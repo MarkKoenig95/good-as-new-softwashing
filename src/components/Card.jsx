@@ -1,11 +1,11 @@
-export default function Card({ children, link, title }) {
+export default function Card({ buttonText, children, link, title }) {
   return (
-    <div className="card" style={{ width: "18rem", height: "18rem" }}>
-      <div className="card-body">
-        <h5 className="card-title">{title}</h5>
+    <div className="card p-4 row" style={{ width: "22rem", height: "22rem" }}>
+      <div className="card-body justify-content-between">
+        <h3 className="card-title fw-bold">{title}</h3>
         <p className="card-text">{children}</p>
         <a href={link} className="btn btn-primary">
-          Go somewhere
+          {buttonText}
         </a>
       </div>
     </div>

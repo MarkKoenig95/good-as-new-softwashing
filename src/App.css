@@ -16,8 +16,8 @@
   margin: 20px;
 }
 
-.jumbotron-text {
-  background-color: #ffffff;
-  border-radius: 2%;
-  box-shadow: 5px 5px 5px rgb(209, 209, 209);
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

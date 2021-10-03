@@ -5,12 +5,11 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./pages/Home";
 import About from "./pages/About";
-import FAQ from "./pages/FAQ";
-import Pricing from "./pages/Pricing";
+import Contact from "./pages/Contact";
+import Services from "./pages/Services";
 
 function Pages() {
   const location = useLocation();
-  console.log(location);
 
   return (
     <div className="App">
@@ -19,14 +18,14 @@ function Pages() {
         <Route exact path="/">
           <Home />
         </Route>
-        <Route path="/pricing">
-          <Pricing />
+        <Route path="/services">
+          <Services />
         </Route>
         <Route path="/about">
           <About />
         </Route>
-        <Route path="/FAQ">
-          <FAQ />
+        <Route path="/contact">
+          <Contact />
         </Route>
       </Switch>
       <Footer />

@@ -1,10 +1,12 @@
+import { Col, Row } from "react-bootstrap";
+
 export default function Footer() {
   return (
     <footer className="bg-light footer">
-      <div className=" p-2 container-fluid row align-items-center justify-content-between">
-        <div className="col">Footer</div>
-        <div className="col">Stuff</div>
-      </div>
+      <Row className="p-2 container-fluid align-items-center justify-content-around">
+        <Col className="text-center">Good As New Soft Washing LLC</Col>
+        <Col className="text-center">Copywrite {new Date().getFullYear()}</Col>
+      </Row>
     </footer>
   );
 }
