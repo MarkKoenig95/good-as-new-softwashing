@@ -24,7 +24,8 @@ export default function Services() {
       </Service>
 
       <Service imageSource="images/roof-washing.jpeg" title="Roof Washing">
-        Uses a soft wash process
+        Uses a soft wash process to remove stains and organic growth from the
+        roof’s surface.
       </Service>
 
       <Service
@@ -47,7 +48,7 @@ export default function Services() {
         title="Surface Cleaning"
       >
         Uses high pressure to remove stains on concrete, stone or brick ground
-        surfaces including decks.
+        surfaces.
       </Service>
 
       <Service imageSource="images/deck-cleaning.png" title="Deck Cleaning">

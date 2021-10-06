@@ -26,7 +26,7 @@ export default function Header(props) {
     <Navbar bg="light" expand="lg">
       <Container>
         <Navbar.Brand href="/">
-          <img src="logo.png" className="App-logo" alt="logo" />
+          <img src="images/logo.png" width="110" height="125" alt="logo" />
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">

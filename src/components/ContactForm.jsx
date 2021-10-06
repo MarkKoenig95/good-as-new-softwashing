@@ -42,6 +42,7 @@ export default function ContactForm() {
   const [body, setBody] = useState("");
 
   const [validated, setValidated] = useState(false);
+  const [userPhone, setUserPhone] = useState(null);
   const [userEmail, setUserEmail] = useState(null);
   const [userName, setUserName] = useState(null);
   const [userStories, setUserStories] = useState(null);
@@ -98,10 +99,21 @@ export default function ContactForm() {
 
     bodyArray.push(`Please contact me using my email: ${userEmail}`);
 
+    bodyArray.push("");
+
+    bodyArray.push(`Or my phone number: ${userPhone}`);
+
     let tempBody = bodyArray.join(br);
 
     setBody(tempBody);
-  }, [userEmail, userName, userServices, userSquareFeet, userStories]);
+  }, [
+    userEmail,
+    userName,
+    userPhone,
+    userServices,
+    userSquareFeet,
+    userStories,
+  ]);
 
   return (
     <Form
@@ -123,7 +135,7 @@ export default function ContactForm() {
           setValue={setUserName}
           type="text"
           value={userName}
-          width={6}
+          width={4}
         />
         <Input
           id={"validationEmail"}
@@ -133,7 +145,17 @@ export default function ContactForm() {
           setValue={setUserEmail}
           type="email"
           value={userEmail}
-          width={6}
+          width={4}
+        />
+        <Input
+          id={"validationPhone"}
+          invalidInputFeedback="Please provide a valid phone number."
+          label="Phone Number"
+          placeholder="123-456-7890"
+          setValue={setUserPhone}
+          type="tel"
+          value={userPhone}
+          width={4}
         />
       </Row>
       <Row className="mb-3">
