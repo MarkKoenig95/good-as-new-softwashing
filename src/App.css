@@ -14,10 +14,17 @@
 .nav-link {
   font-size: large;
   margin: 20px;
+  align-self: flex-end;
 }
 
 .card-body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+  .nav-link {
+    align-self: center;
+  }
 }

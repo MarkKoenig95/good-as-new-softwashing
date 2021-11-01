@@ -21,6 +21,14 @@ export default function Contact() {
                 Ethan@GANsoftwashing.com
               </a>
             </p>
+            <Row className="justify-content-around p-2">
+              <a className="col-3" href="https://facebook.com/gansoftwashing">
+                <Image src="images/facebook.jpg" width="30" height="30" />
+              </a>
+              <a className="col-3" href="https://instagram.com/gansoftwashing">
+                <Image src="images/instagram.jpg" width="30" height="30" />
+              </a>
+            </Row>
           </Col>
         </Row>
       </Container>

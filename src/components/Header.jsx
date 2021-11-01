@@ -1,4 +1,4 @@
-import { Container, Nav, Navbar } from "react-bootstrap";
+import { Container, Image, Nav, Navbar } from "react-bootstrap";
 
 export default function Header(props) {
   const { currentPath } = props;
@@ -32,6 +32,18 @@ export default function Header(props) {
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
             {Object.entries(links).map(getLinksFromEntries)}
+            <Nav.Link
+              className="nav-link"
+              href="https://facebook.com/gansoftwashing"
+            >
+              <Image src="images/facebook.jpg" width="30" height="30" />
+            </Nav.Link>
+            <Nav.Link
+              className="nav-link"
+              href="https://instagram.com/gansoftwashing"
+            >
+              <Image src="images/instagram.jpg" width="30" height="30" />
+            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Container>
