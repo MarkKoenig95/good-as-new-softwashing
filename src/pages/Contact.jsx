@@ -23,10 +23,10 @@ export default function Contact() {
             </p>
             <Row className="justify-content-around p-2">
               <a className="col-3" href="https://facebook.com/gansoftwashing">
-                <Image src="images/facebook.jpg" width="30" height="30" />
+                <Image src="images/icon_facebook.png" width="30" height="30" />
               </a>
               <a className="col-3" href="https://instagram.com/gansoftwashing">
-                <Image src="images/instagram.jpg" width="30" height="30" />
+                <Image src="images/icon_instagram.png" width="30" height="30" />
               </a>
             </Row>
           </Col>

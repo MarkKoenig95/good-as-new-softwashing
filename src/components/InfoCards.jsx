@@ -24,16 +24,17 @@ export default function InfoCards() {
       </div>
       <div className="col">
         <Card
-          buttonText="Click to learn more"
-          title="Services"
+          buttonText="Click to learn more and see average pricing"
+          title="Services and Pricing"
           link="/#/services"
         >
           <ul>
-            <li>House Washing</li>
-            <li>Gutter Cleaning</li>
-            <li>Gutter Brightening</li>
-            <li>Surface Cleaning</li>
-            <li>Deck Cleaning</li>
+            <li className="fw-bold">
+              <h5>House Washing</h5>
+            </li>
+            <li className="fw-bold">
+              <h5>Roof Washing</h5>
+            </li>
           </ul>
         </Card>
       </div>

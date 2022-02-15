@@ -1,6 +1,8 @@
+import { Image } from "react-bootstrap";
 import Carousel from "react-bootstrap/Carousel";
 
 export default function Jumbotron() {
+  const slideshowPictures = [1, 2, 3];
   return (
     <div className=" row p-3 mb-4 bg-primary text-white align-items-center justify-content-around">
       <div className="m-2 p-5 col-lg-3 col-md-10">
@@ -13,27 +15,19 @@ export default function Jumbotron() {
         prevLabel=""
         nextLabel=""
       >
-        <Carousel.Item interval={5000}>
-          <img
-            src="images/before-after-house.jpg"
-            className="d-block w-100"
-            alt="before and after house"
-          />
-        </Carousel.Item>
-        <Carousel.Item interval={5000}>
-          <img
-            src="images/before-after-siding.jpg"
-            className="d-block w-100"
-            alt="before and after siding"
-          />
-        </Carousel.Item>
-        <Carousel.Item interval={5000}>
-          <img
-            src="images/before-after-roof.jpg"
-            className="d-block w-100"
-            alt="before and after roof"
-          />
-        </Carousel.Item>
+        {slideshowPictures.map((pictureNumber) => {
+          let src = `images/slideshow_${pictureNumber}.png`;
+          return (
+            <Carousel.Item key={src} interval={5000}>
+              <Image
+                src={src}
+                className="d-block mh-25 w-100"
+                alt="before and after"
+                fluid
+              />
+            </Carousel.Item>
+          );
+        })}
       </Carousel>
     </div>
   );

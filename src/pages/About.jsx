@@ -1,13 +1,19 @@
 import { Image } from "react-bootstrap";
 
 function Question(props) {
-  const { children, title } = props;
+  const { children, title, center } = props;
+
+  let bodyClasses = "mb-5";
+
+  if (center) {
+    bodyClasses += " text-center";
+  }
 
   return (
     <>
       <hr className="border-primary" />
       <h4 className="mb-5 mt-5 text-center">{title}</h4>
-      <p className="mb-5">{children}</p>
+      <p className={bodyClasses}>{children}</p>
     </>
   );
 }
@@ -48,17 +54,7 @@ export default function About() {
         organic matter that causes most house stains.
       </Question>
 
-      <Question title="Do you ever use a Pressure Washer?">
-        Yes, in many other situations besides house and roof washing, such as
-        concrete driveways, high pressure is needed to effectively clean the
-        surface. We also perform pressure washing services with professional
-        grade equipment.
-      </Question>
-
-      <Question
-        title="
-        Why does my siding look chalky? What is oxidation?"
-      >
+      <Question title="Why does my siding look chalky? What is oxidation?">
         Oxidation occurs over time on any painted surface exposed to the
         elements. Oxidation causes a chalky, dull appearance. If a pressure
         washer is used on oxidized siding, it can cause ugly streaks to appear.
@@ -69,22 +65,29 @@ export default function About() {
         <Image
           fluid
           className="col-sm-9 col-md-7"
-          src="images/oxidation.jpeg"
+          src="images/faq_oxidation.jpeg"
         />
       </div>
-      <Question
-        title="
-        Do you remove oxidation?"
-      >
+      <Question title="Do you remove oxidation?">
         Oxidation removal is possible with specialized chemicals. However, this
         is best performed by a team of multiple people all working together, as
         letting this chemical dry can damage the home. Due to this risk I cannot
         safely perform this service on vinyl siding. However, I can remove
         oxidation on smaller surfaces such as shutters and gutters.
       </Question>
-      <Question title="I have a rust stain on my house. Can you remove it?">
+      <Question
+        title="I have a rust stain on my house. Can you remove it?"
+        center
+      >
         Yes! We are able to remove stains caused by rust.
       </Question>
+      <div className="container-fluid text-center">
+        <Image
+          fluid
+          className="col-sm-9 col-md-7"
+          src="images/faq_rust-stain.jpeg"
+        />
+      </div>
     </div>
   );
 }

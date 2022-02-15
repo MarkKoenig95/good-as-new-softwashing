@@ -42,11 +42,15 @@ export default function ContactForm() {
   const [body, setBody] = useState("");
 
   const [validated, setValidated] = useState(false);
-  const [userPhone, setUserPhone] = useState(null);
-  const [userEmail, setUserEmail] = useState(null);
-  const [userName, setUserName] = useState(null);
-  const [userStories, setUserStories] = useState(null);
-  const [userSquareFeet, setUserSquareFeet] = useState(null);
+  const [userPhone, setUserPhone] = useState("");
+  const [userEmail, setUserEmail] = useState("");
+  const [userName, setUserName] = useState("");
+  const [userStories, setUserStories] = useState("");
+  const [userSquareFeet, setUserSquareFeet] = useState("");
+  const [userAddress, setUserAddress] = useState("");
+  const [userCity, setUserCity] = useState("");
+  const [userState, setUserState] = useState("");
+  const [userZip, setUserZip] = useState("");
   const [userServices, setUserServices] = useState("");
 
   const _handleSubmit = (event) => {
@@ -81,10 +85,17 @@ export default function ContactForm() {
 
     bodyArray.push("");
 
+    // eslint-disable-next-line eqeqeq
     let plural = userStories == 1 ? "y" : "ies";
 
     bodyArray.push(
       `My home is ${userStories} stor${plural} and ${userSquareFeet} square feet`
+    );
+
+    bodyArray.push("");
+
+    bodyArray.push(
+      `My address is ${userAddress}, ${userCity}, ${userState} ${userZip}`
     );
 
     bodyArray.push("");
@@ -107,12 +118,16 @@ export default function ContactForm() {
 
     setBody(tempBody);
   }, [
+    userAddress,
+    userCity,
     userEmail,
     userName,
     userPhone,
     userServices,
     userSquareFeet,
+    userState,
     userStories,
+    userZip,
   ]);
 
   return (
@@ -131,7 +146,6 @@ export default function ContactForm() {
           id={"validationName"}
           invalidInputFeedback="Please provide a name we can contact."
           label="Name"
-          placeholder="Name"
           setValue={setUserName}
           type="text"
           value={userName}
@@ -141,7 +155,7 @@ export default function ContactForm() {
           id={"validationEmail"}
           invalidInputFeedback="Please provide a valid email address."
           label="Email"
-          placeholder="Email"
+          placeholder="user@example.com"
           setValue={setUserEmail}
           type="email"
           value={userEmail}
@@ -181,6 +195,52 @@ export default function ContactForm() {
           type="number"
           value={userSquareFeet}
           width={3}
+        />
+      </Row>
+
+      <Row className="mb-3">
+        <h5>Home Address</h5>
+      </Row>
+      <Row className="mb-3">
+        <Input
+          id="contactAddress"
+          invalidInputFeedback="Please provide an address for our records."
+          label="Address"
+          placeholder="ex. 123 Main Street"
+          setValue={setUserAddress}
+          type="text"
+          value={userAddress}
+          width={12}
+        />
+      </Row>
+
+      <Row className="mb-3">
+        <Input
+          id="contactCity"
+          invalidInputFeedback="Please provide a city for our records."
+          label="City"
+          setValue={setUserCity}
+          type="text"
+          value={userCity}
+          width={4}
+        />
+        <Input
+          id="contactState"
+          invalidInputFeedback="Please provide a state for our records."
+          label="State"
+          setValue={setUserState}
+          type="text"
+          value={userState}
+          width={4}
+        />
+        <Input
+          id="contactZip"
+          invalidInputFeedback="Please provide a zip for our records."
+          label="Zip / Postal Code"
+          setValue={setUserZip}
+          type="text"
+          value={userZip}
+          width={4}
         />
       </Row>
 
