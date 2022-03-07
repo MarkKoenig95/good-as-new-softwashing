@@ -18,7 +18,7 @@ export const houseWashPriceTable = {
   titles: ["One Story", "Two Story", "Three Story"],
   sf500: [250, 300, 350],
   sf1000: [350, 400, 450],
-  sf1500: [400, 500, 550],
+  sf1500: [400, 450, 500],
   sf2000: [450, 500, 550],
   sf2500: [500, 550, 600],
   sf3000: [550, 600, 650],
@@ -26,7 +26,7 @@ export const houseWashPriceTable = {
 };
 
 export const houseWashMaterials = [
-  { name: "Vynil", message: null },
+  { name: "Vinyl", message: null },
   { name: "Aluminum", message: null },
   { name: "Brick", message: null },
   { name: "Stone", message: null },
