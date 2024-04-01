@@ -16,8 +16,9 @@ export default function Contact() {
               Phone: <a href="tel:267-396-7855">267-396-7855</a>
             </p>
             <p>
-              Email:{" "}
+              Email:
               <a href="mailto:Ethan@GANsoftwashing.com">
+                {" "}
                 Ethan@GANsoftwashing.com
               </a>
             </p>
