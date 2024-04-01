@@ -1,6 +1,7 @@
 {
   "name": "good-as-new",
   "version": "1.0.0",
+  "homepage": "https://markkoenig95.github.io/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.4",
