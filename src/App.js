@@ -35,7 +35,7 @@ function Pages() {
 
 function App() {
   return (
-    <HashRouter basename="/">
+    <HashRouter basename="{process.env.PUBLIC_URL}">
       <Pages />
     </HashRouter>
   );
