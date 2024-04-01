@@ -5,7 +5,7 @@ export default function Footer() {
     <footer className="bg-light footer">
       <Row className="p-2 container-fluid align-items-center justify-content-around">
         <Col className="text-center">Good As New Soft Washing LLC</Col>
-        <Col className="text-center">Copywrite {new Date().getFullYear()}</Col>
+        <Col className="text-center">Copyright {new Date().getFullYear()}</Col>
       </Row>
     </footer>
   );
