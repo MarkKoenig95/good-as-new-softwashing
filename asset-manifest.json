@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.0410149e.chunk.css",
-    "main.js": "/static/js/main.7f37f0d8.chunk.js",
-    "main.js.map": "/static/js/main.7f37f0d8.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.c6295edf.js",
-    "runtime-main.js.map": "/static/js/runtime-main.c6295edf.js.map",
-    "static/css/2.7d020e43.chunk.css": "/static/css/2.7d020e43.chunk.css",
-    "static/js/2.8355dd74.chunk.js": "/static/js/2.8355dd74.chunk.js",
-    "static/js/2.8355dd74.chunk.js.map": "/static/js/2.8355dd74.chunk.js.map",
-    "static/js/3.c7807dbb.chunk.js": "/static/js/3.c7807dbb.chunk.js",
-    "static/js/3.c7807dbb.chunk.js.map": "/static/js/3.c7807dbb.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/2.7d020e43.chunk.css.map": "/static/css/2.7d020e43.chunk.css.map",
-    "static/css/main.0410149e.chunk.css.map": "/static/css/main.0410149e.chunk.css.map",
-    "static/js/2.8355dd74.chunk.js.LICENSE.txt": "/static/js/2.8355dd74.chunk.js.LICENSE.txt"
+    "main.css": "/good-as-new-softwashing/static/css/main.0410149e.chunk.css",
+    "main.js": "/good-as-new-softwashing/static/js/main.4924e97d.chunk.js",
+    "main.js.map": "/good-as-new-softwashing/static/js/main.4924e97d.chunk.js.map",
+    "runtime-main.js": "/good-as-new-softwashing/static/js/runtime-main.07aa84ad.js",
+    "runtime-main.js.map": "/good-as-new-softwashing/static/js/runtime-main.07aa84ad.js.map",
+    "static/css/2.7d020e43.chunk.css": "/good-as-new-softwashing/static/css/2.7d020e43.chunk.css",
+    "static/js/2.8355dd74.chunk.js": "/good-as-new-softwashing/static/js/2.8355dd74.chunk.js",
+    "static/js/2.8355dd74.chunk.js.map": "/good-as-new-softwashing/static/js/2.8355dd74.chunk.js.map",
+    "static/js/3.c7807dbb.chunk.js": "/good-as-new-softwashing/static/js/3.c7807dbb.chunk.js",
+    "static/js/3.c7807dbb.chunk.js.map": "/good-as-new-softwashing/static/js/3.c7807dbb.chunk.js.map",
+    "index.html": "/good-as-new-softwashing/index.html",
+    "static/css/2.7d020e43.chunk.css.map": "/good-as-new-softwashing/static/css/2.7d020e43.chunk.css.map",
+    "static/css/main.0410149e.chunk.css.map": "/good-as-new-softwashing/static/css/main.0410149e.chunk.css.map",
+    "static/js/2.8355dd74.chunk.js.LICENSE.txt": "/good-as-new-softwashing/static/js/2.8355dd74.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.c6295edf.js",
+    "static/js/runtime-main.07aa84ad.js",
     "static/css/2.7d020e43.chunk.css",
     "static/js/2.8355dd74.chunk.js",
     "static/css/main.0410149e.chunk.css",
-    "static/js/main.7f37f0d8.chunk.js"
+    "static/js/main.4924e97d.chunk.js"
   ]
 }
