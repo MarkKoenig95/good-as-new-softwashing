@@ -7,7 +7,7 @@ export default function InfoCards() {
         <Card
           buttonText="Click to request a quote"
           title="Contact"
-          link="/#/contact"
+          link="./#/contact"
         >
           <h5 className="mb-3 mt-3">Ethan Blomquist</h5>
           <p>(Fully Insured)</p>
@@ -26,7 +26,7 @@ export default function InfoCards() {
         <Card
           buttonText="Click to learn more and see average pricing"
           title="Services and Pricing"
-          link="/#/services"
+          link="./#/services"
         >
           <ul>
             <li className="fw-bold">
@@ -39,7 +39,7 @@ export default function InfoCards() {
         </Card>
       </div>
       <div className="col">
-        <Card buttonText="Click to learn more" title="FAQ" link="/#/about">
+        <Card buttonText="Click to learn more" title="FAQ" link="./#/about">
           <ul>
             <li>What is Soft Washing?</li>
             <li>Why not just use a pressure washer?</li>

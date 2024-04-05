@@ -22,7 +22,7 @@ export default function Header(props) {
       <Nav.Link
         key={name + path}
         className={"nav-link" + active}
-        href={"/#" + path}
+        href={"./#" + path}
         style={{ minWidth: "4rem" }}
         onClick={() => setExpanded(false)}
       >
