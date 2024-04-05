@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/good-as-new-softwashing/static/css/main.0410149e.chunk.css",
-    "main.js": "/good-as-new-softwashing/static/js/main.25deba83.chunk.js",
-    "main.js.map": "/good-as-new-softwashing/static/js/main.25deba83.chunk.js.map",
+    "main.js": "/good-as-new-softwashing/static/js/main.8242ae23.chunk.js",
+    "main.js.map": "/good-as-new-softwashing/static/js/main.8242ae23.chunk.js.map",
     "runtime-main.js": "/good-as-new-softwashing/static/js/runtime-main.07aa84ad.js",
     "runtime-main.js.map": "/good-as-new-softwashing/static/js/runtime-main.07aa84ad.js.map",
     "static/css/2.7d020e43.chunk.css": "/good-as-new-softwashing/static/css/2.7d020e43.chunk.css",
@@ -20,6 +20,6 @@
     "static/css/2.7d020e43.chunk.css",
     "static/js/2.8355dd74.chunk.js",
     "static/css/main.0410149e.chunk.css",
-    "static/js/main.25deba83.chunk.js"
+    "static/js/main.8242ae23.chunk.js"
   ]
 }
